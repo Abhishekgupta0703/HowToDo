@@ -64,7 +64,7 @@ const TaskList = ({ tasks, toggleComplete, deleteTask, updateAdvice }) => {
                                     className={`mr-2 py-2 px-3 rounded-md ${task.completed ? 'bg-gray-300 hover:bg-gray-400' : ' bg-green-500 hover:bg-green-600'}`}
                                 ><Check size={23} className="text-white " /></button>
                                 <span
-                                    className={`flex-grow items-center m-auto text-xl text-black ${task.completed ? 'line-through text-gray-500' : ''
+                                    className={`flex-grow items-center m-auto text-md text-black ${task.completed ? 'line-through text-gray-500' : ''
                                         }`}
                                 >
                                     {task.text}

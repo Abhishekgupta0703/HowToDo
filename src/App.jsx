@@ -44,7 +44,7 @@ const App = () => {
   });
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-400 via-pink-500 to-red-500 flex items-center justify-center p-4">
+    <div className="min-h-screen bg-gradient-to-br from-purple-400 via-pink-500 to-red-500 flex items-center justify-center p-4 relative">
       <div className="bg-white bg-opacity-20 backdrop-blur-lg rounded-lg shadow-lg p-6 w-full max-w-md">
         <h1 className="text-4xl font-bold text-white mb-6 text-center">
           Todo List
@@ -58,6 +58,8 @@ const App = () => {
           updateAdvice={updateAdvice}
         />
       </div>
+      <div className="absolute bottom-6 bg-[#00ADB5] w-12 h-12 rounded-full 
+      object-cover overflow-clip right-6 border-4 border-[#EEEEEE]"><a href="https://Abhishekgupta0703.github.io/Portfolio" target='_blank' className=''><img src="/hero.png" className='w-full h-full object-contain' alt="" /></a></div>
     </div>
   );
 };
