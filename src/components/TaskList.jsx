@@ -52,7 +52,7 @@ const TaskList = ({ tasks, toggleComplete, deleteTask, updateAdvice }) => {
                         exit={{ opacity: 0, y: 20 }}
                         transition={{ duration: 0.3 }}
                         key={task.id}
-                        className={`flex flex-col items-center bg-white bg-opacity-50 rounded-lg p-3 mb-2 ${task.completed ? 'bg-green-100' : 'bg-white'
+                        className={`flex flex-col items-center bg-white bg-opacity-50 rounded-lg px-2 py-1 mb-2 ${task.completed ? 'bg-green-100' : 'bg-white'
                             }`}
                     >
                         <div className='flex justify-between items-center w-full'>
@@ -61,8 +61,8 @@ const TaskList = ({ tasks, toggleComplete, deleteTask, updateAdvice }) => {
                                     type="checkbox"
 
                                     onClick={() => toggleComplete(task.id)}
-                                    className={`mr-2 py-2 px-3 rounded-md ${task.completed ? 'bg-gray-300 hover:bg-gray-400' : ' bg-green-500 hover:bg-green-600'}`}
-                                ><Check size={23} className="text-white " /></button>
+                                    className={`mr-2 py-1.5 px-2 rounded-md ${task.completed ? 'bg-gray-300 hover:bg-gray-400' : ' bg-green-500 hover:bg-green-600'}`}
+                                ><Check size={20} className="text-white " /></button>
                                 <span
                                     className={`flex-grow items-center m-auto text-md text-black ${task.completed ? 'line-through text-gray-500' : ''
                                         }`}
@@ -70,12 +70,12 @@ const TaskList = ({ tasks, toggleComplete, deleteTask, updateAdvice }) => {
                                     {task.text}
                                 </span>
                             </div>
-                            <div className="flex gap-2">
+                            <div className="flex items-center gap-2">
                                 <button
                                     onClick={() => deleteTask(task.id)}
-                                    className="bg-red-500 hover:bg-red-600 px-5 rounded-md"
+                                    className="bg-red-500 hover:bg-red-600 py-1.5 px-2 rounded-md"
                                 >
-                                    <Trash2 size={22} className="text-white" />
+                                    <Trash2 size={20} className="text-white" />
                                 </button>
                                 <OpenAIHelper
                                     taskText={task.text}

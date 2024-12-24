@@ -44,9 +44,9 @@ const App = () => {
   });
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-400 via-pink-500 to-red-500 flex items-center justify-center p-4 relative">
+    <div className="min-h-[100dvh] bg-gradient-to-br from-purple-400 via-pink-500 to-red-500 flex items-start justify-center p-4 relative">
       <div className="bg-white bg-opacity-20 backdrop-blur-lg rounded-lg shadow-lg p-6 w-full max-w-md">
-        <h1 className="text-4xl font-bold text-white mb-6 text-center">
+        <h1 className="text-3xl font-bold text-white mb-6 text-center">
           Todo List
         </h1>
         <AddTask addTask={addTask}/>

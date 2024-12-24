@@ -18,11 +18,11 @@ const AddTask = ({ addTask }) => {
         value={taskText}
         onChange={(e) => setTaskText(e.target.value)}
         placeholder="Enter a task"
-        className="flex-grow mr-2 rounded-md bg-white bg-opacity-50 border-none placeholder-gray-500 text-gray-800 p-3 outline-none"
+        className="flex-grow rounded-md bg-white bg-opacity-50 border-none placeholder-gray-500 text-gray-800 p-2 outline-none"
       />
       <button
         type="submit"
-        className="bg-white p-3 text-purple-600 hover:bg-purple-100 rounded-md"
+        className="bg-white p-2 text-purple-600 hover:bg-purple-100 rounded-md"
       >
         <Plus size={24} />
       </button>
